@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  background-color: #e2f8fa;
+  display: flex;
+}
+
+.contact {
+  height: 500px;
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  border-radius: 0.4rem;
+  background-color: #fff;
+}
+
+.contact .contact-img {
+  width: 50%;
+  height: 100%;
+  background-image: url("./assets/photos/contact-us.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.4rem;
+}
+
+.contact .contact-form {
+  width: 50%;
+  height: 100%;
+}
+
+.contact .contact-form h3 {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.contact .contact-form form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact .contact-form form label {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact .contact-form form input {
+  width: 85%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border: 2px solid #dddddd;
+  border-radius: 0.4rem;
+  background-color: #f7f7f7;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.contact-form form input:focus {
+  border: 2px solid #35a1f3;
+}
+
+.contact-form textarea {
+  width: 85%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border: 2px solid #dddddd;
+  border-radius: 0.4rem;
+  background-color: #f7f7f7;
+  outline: none;
+  margin-bottom: 1rem;
+  resize: none;
+}
+
+.contact-form textarea:focus {
+  border: 2px solid #35a1f3;
+}
+
+.btn {
+  margin-top: 0.5rem;
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px !important;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3498db !important;
+  border: 2px solid #fff;
+  overflow: hidden;
+  transition: background-color 0.4s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #2e8ac6 !important ;
+}
+
+.contact .contact-img {
+  animation: keyspin 3s 1 ease;
+}
+
+@keyframes keyspin {
+  0% {
+    transform: translateX(-150%);
+  }
+  50% {
+    transform: translateY(20%) rotateY(-360deg);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
